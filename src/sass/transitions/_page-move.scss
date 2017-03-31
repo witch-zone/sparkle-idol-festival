@@ -1,0 +1,17 @@
+.t-page-move-appear {
+  opacity: 0.01;
+
+  &-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+  }
+}
+
+.t-page-move-leave {
+  opacity: 1;
+
+  &-active {
+    opacity: 0.01;
+    transition: opacity .5s ease-in;
+  }
+}

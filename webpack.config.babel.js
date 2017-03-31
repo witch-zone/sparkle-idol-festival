@@ -72,7 +72,11 @@ config.production = {
 
   plugins: [
     ...config.default.plugins,
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+      },
+    }),
   ]
 }
 
