@@ -2,9 +2,9 @@ $base-font-size-small: 87.5%;
 $base-font-size-medium: 100%;
 $base-font-size-large: 100%;
 $base-font-family: "LLSIF Text";
-$header-font-family: "LLSIF Title";
+$header-font-family: $base-font-family;
 
-$base-line-height: 1.5;
+$base-line-height: 1.1;
 $base-letter-spacing: 0.005em;
 
 $header-line-height: $base-line-height;

@@ -29,7 +29,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: $header-spacing;
   font-weight: $font-weight-regular;
   font-family: $header-font-family;
-  text-transform: lowercase;
 
   &:last-child {
     margin-bottom: 0;
@@ -74,9 +73,4 @@ picture {
   margin: 0;
   max-width: 100%;
   height: auto;
-}
-
-blockquote {
-  border-left: $base-border-size solid;
-  padding-left: $base-spacing;
 }

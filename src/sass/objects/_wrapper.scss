@@ -5,8 +5,8 @@
   box-sizing: border-box;
   padding: 3em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }

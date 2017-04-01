@@ -1,12 +1,18 @@
+$scouting-icon-width: 7em;
+$scouting-icon-margin: 0.5em;
+
 .c-scouting-results {
+  background: $colour-white;
   text-align: center;
+  padding: 1em 0.5em;
 }
 
 .c-scouting-results__idol {
   display: inline-block;
-  margin: 0.5em;
+  margin: $scouting-icon-margin;
 
   img {
     vertical-align: bottom;
+    width: $scouting-icon-width;
   }
 }

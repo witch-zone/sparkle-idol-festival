@@ -9,6 +9,9 @@
 
 .t-page-move-leave {
   opacity: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
 
   &-active {
     opacity: 0.01;
