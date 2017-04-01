@@ -2,11 +2,11 @@ import React from 'react'
 import Transition from 'react-addons-css-transition-group'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
-import Idols from './components/idols'
+import { Routes as IdolRoutes } from './components/idols'
 import ScoutingResults from './components/ScoutingResults'
 
 const SparkleIdolFestival = () => (
-  <main>
+  <main className="o-wrapper">
     <Route render={({ location }) => (
       <Transition
         transitionName="t-page-move"
@@ -19,7 +19,7 @@ const SparkleIdolFestival = () => (
           location={location}
           key={location.key}
         >
-          <Route path="/idols" component={Idols} />
+          <Route path="/idols" component={IdolRoutes} />
           <Route exact path="/" component={ScoutingResults} />
           <Redirect to="/" />
         </Switch>

@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import ring from '../../../assets/images/rings/robin.png'
+import ring from '../../../assets/images/rings/borb.png'
 
-const Robin = () => (
+const Borb = () => (
   <div>
     <Link to="/">back</Link>
   </div>
 )
 
-Robin.Ring = () => (
+Borb.Ring = () => (
   <img
     src={ring}
-    alt="Robin"
+    alt="Borb"
   />
 )
 
-export default Robin
+export default Borb

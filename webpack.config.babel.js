@@ -34,7 +34,10 @@ config.default = {
       loader: ExtractTextPlugin.extract(['css', 'postcss', 'sass']),
     }, {
       test: /\.(jpe?g|png|gif|svg)$/i,
-      loader: 'file?name=assets/images/[name].[ext]!img?minimize',
+      loaders: [
+        'preload-image',
+        'file?name=assets/images/[name].[ext]!img?minimize',
+      ]
     }]
   },
 

@@ -11,8 +11,9 @@ import Katie from './Katie'
 import Saffron from './Saffron'
 import Danni from './Danni'
 import Gemma from './Gemma'
+import Borb from './Borb'
 
-const Idols = () => (
+const Routes = () => (
   <Switch>
     <Route path="/idols/dani" component={Dani} />
     <Route path="/idols/yen" component={Yen} />
@@ -24,8 +25,36 @@ const Idols = () => (
     <Route path="/idols/saffron" component={Saffron} />
     <Route path="/idols/danni" component={Danni} />
     <Route path="/idols/gemma" component={Gemma} />
+    <Route path="/idols/borb" component={Borb} />
     <Redirect to="/" />
   </Switch>
 )
 
-export default Idols
+export {
+  Routes,
+  Dani,
+  Yen,
+  Robin,
+  Sami,
+  Harley,
+  Michaela,
+  Katie,
+  Saffron,
+  Danni,
+  Gemma,
+  Borb,
+}
+
+export default {
+  Dani,
+  Yen,
+  Robin,
+  Sami,
+  Harley,
+  Michaela,
+  Katie,
+  Saffron,
+  Danni,
+  Gemma,
+  Borb,
+}
