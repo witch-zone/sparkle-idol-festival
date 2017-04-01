@@ -2,12 +2,13 @@ import React from 'react'
 import Transition from 'react-addons-css-transition-group'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
+import BorderOverlay from './components/BorderOverlay'
 import { Routes as IdolRoutes } from './components/idols'
 import ScoutingResults from './components/ScoutingResults'
 
 const SparkleIdolFestival = () => (
   <main className="o-wrapper">
-    <div className="border"></div>
+    <BorderOverlay />
 
     <Route render={({ location }) => (
       <Transition
