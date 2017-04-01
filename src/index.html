@@ -6,29 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>WitchZone! Sparkle Idol Festival</title>
-
-  <style>
-    .💭 {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 9999;
-
-      background-color: #f6f6f6;
-
-      opacity: 1;
-      visibility: visible;
-      transition-duration: 0.33s;
-      transition-property: opacity, visibility;
-      transition-timing-function: ease-out;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="💭"></div>
+  <div class="p-border">
+    <img
+      src="${require(`assets/images/border/top-left.png`)}"
+      class="p-border__top-left"
+    />
+    <img
+      src="${require(`assets/images/border/top-right.png`)}"
+      class="p-border__top-right"
+    />
+    <img
+      src="${require(`assets/images/border/bottom-left.png`)}"
+      class="p-border__bottom-left"
+    />
+    <img
+      src="${require(`assets/images/border/bottom-right.png`)}"
+      class="p-border__bottom-right"
+    />
+  </div>
+
+  <div class="💭">
+    <img
+      src="${require(`assets/images/ribbon-logo.png`)}"
+      class="p-logo"
+    />
+  </div>
+
   <div id="✨"></div>
 </body>
 

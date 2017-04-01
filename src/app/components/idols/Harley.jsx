@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import ring from '../../../assets/images/rings/harley.png'
+import ring from 'preload-image!../../../assets/images/rings/harley.png'
 
 const Harley = () => (
   <div>

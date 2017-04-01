@@ -1,4 +1,4 @@
-.o-border {
+.p-border {
   z-index: 99;
   position: absolute;
   top: 0;
@@ -38,25 +38,25 @@
   }
 }
 
-.o-border__top-left {
+.p-border__top-left {
   top: -1.3em;
   left: -1.6em;
   width: 4em;
 }
 
-.o-border__top-right {
+.p-border__top-right {
   top: -0.7em;
   right: -0.7em;
   width: 7em;
 }
 
-.o-border__bottom-left {
+.p-border__bottom-left {
   left: -0.5em;
   bottom: -0.5em;
   width: 7em;
 }
 
-.o-border__bottom-right {
+.p-border__bottom-right {
   bottom: -0.6em;
   right: -0.5em;
   width: 5em;

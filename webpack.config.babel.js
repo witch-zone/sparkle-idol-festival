@@ -3,10 +3,14 @@ import CleanWebpackPlugin from 'clean-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import autoprefixer from 'autoprefixer'
+import StyleExtHtmlWebpackPlugin from 'style-ext-html-webpack-plugin'
 
 const env = process.env.NODE_ENV
 
 const config = {}
+
+const preloadCSS = new ExtractTextPlugin('preload.css')
+const mainCSS = new ExtractTextPlugin('sif.[hash].css')
 
 config.default = {
   entry: {
@@ -25,18 +29,21 @@ config.default = {
       loader: 'babel',
     }, {
       test: /\.html?$/,
-      loader: 'html-loader?minimize=true&removeAttributeQuotes=false',
+      loader: 'html-loader?minimize=true&removeAttributeQuotes=false&interpolate=require',
     }, {
       test: /\.woff2?$/,
       loader: 'url',
     }, {
-      test: /\.s?css$/,
-      loader: ExtractTextPlugin.extract(['css', 'postcss', 'sass']),
+      test: /preload\.scss$/,
+      loader: preloadCSS.extract(['css', 'postcss', 'sass']),
+    }, {
+      test: /sif\.scss$/,
+      loader: mainCSS.extract(['css', 'postcss', 'sass']),
     }, {
       test: /\.(jpe?g|png|gif|svg)$/i,
       loaders: [
-        'preload-image',
-        'file?name=assets/images/[name].[ext]!img?minimize',
+        'url?limit=15000&name=assets/images/[name].[ext]',
+        'img',
       ]
     }]
   },
@@ -60,8 +67,10 @@ config.default = {
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
-    new ExtractTextPlugin('[name].[hash].css'),
     new HtmlWebpackPlugin({ template: './src/index.html' }),
+    preloadCSS,
+    mainCSS,
+    new StyleExtHtmlWebpackPlugin('preload.css'),
   ],
 }
 

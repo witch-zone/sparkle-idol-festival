@@ -1,0 +1,14 @@
+.💭 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+
+  opacity: 1;
+  visibility: visible;
+  transition-duration: 0.33s;
+  transition-property: all;
+  transition-timing-function: ease-out;
+  text-align: center;
+  transform-origin: 0 0;
+}
