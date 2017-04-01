@@ -1,12 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import IdolDetails from '../IdolDetails'
 
 import ring from 'preload-image!../../../assets/images/rings/katie.png'
+import card from '../../../assets/images/cards/katie.jpg'
 
 const Katie = () => (
-  <div>
-    <Link to="/">back</Link>
-  </div>
+  <IdolDetails
+    name="Katie Collins"
+    skill="Power Of The Moon"
+    attribute="smile"
+    card={card}
+    ring={ring}
+  />
 )
 
 Katie.Ring = () => (

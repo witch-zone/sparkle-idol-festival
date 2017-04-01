@@ -5,7 +5,7 @@ import Idols from './idols'
 
 const ScoutingResults = () => (
   <div className="o-page t-page-move--natsuiro-egao-de-1-2-jump">
-    <header>
+    <header className="o-header">
       <h1 className="c-title">
         Scout
       </h1>

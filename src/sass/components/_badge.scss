@@ -69,3 +69,10 @@
     color: $colour-white;
   }
 }
+
+.c-badge--all {
+  .c-badge__skill {
+    background-color: $colour-sif-all;
+    color: $colour-white;
+  }
+}

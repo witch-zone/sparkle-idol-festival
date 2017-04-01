@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom'
 
 import Badge from './Badge'
 
-import card from 'preload-image!../../assets/images/cards/back.jpg'
+import placeholderCard from 'preload-image!../../assets/images/cards/back.jpg'
 
 const IdolDetails = ({
   name,
   skill,
   attribute,
+  card,
+  ring,
 }) => (
   <div className="o-page">
-    <header>
+    <header className="o-header">
       <h1 className="c-title">
         Scout
       </h1>
@@ -19,7 +21,7 @@ const IdolDetails = ({
 
     <article className="c-idol-details">
       <div className="c-idol-details__card">
-        <img src={card} />
+        <img src={card || placeholderCard} />
       </div>
 
       <div className="c-idol-details__sidebar">

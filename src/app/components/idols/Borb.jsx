@@ -1,18 +1,25 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import IdolDetails from '../IdolDetails'
 
 import ring from 'preload-image!../../../assets/images/rings/borb.png'
+import card from '../../../assets/images/cards/borb.jpg'
 
 const Borb = () => (
-  <div>
-    <Link to="/">back</Link>
-  </div>
+  <IdolDetails
+    name="Bat Orb"
+    skill="Everybody loves them!"
+    attribute="all"
+    card={card}
+    ring={ring}
+  />
 )
 
 Borb.Ring = () => (
   <img
     src={ring}
     alt="Borb"
+    role="presentation"
   />
 )
 
