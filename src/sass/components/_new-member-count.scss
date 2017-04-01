@@ -4,10 +4,11 @@
   right: 0;
   font-size: 2.5em;
   line-height: 0.6;
+  letter-spacing: -0.05em;
   padding: 0.25em 1em;
   font-family: "LLSIF Rounded";
 
-  text-stroke: 0.1em $colour-sif-border;
+  text-stroke: 0.2em $colour-sif-border;
   -webkit-text-stroke: 0.04em $colour-sif-border;
   text-shadow: 0 0 0.05em $colour-sif-border;
   color: white;

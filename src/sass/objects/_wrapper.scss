@@ -9,4 +9,10 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-items: stretch;
+
+  background: url("../assets/images/otonokizaka.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
 }
