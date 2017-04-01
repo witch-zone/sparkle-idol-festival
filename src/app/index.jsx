@@ -11,9 +11,7 @@ const SparkleIdolFestival = () => (
       component="main"
       className="o-wrapper"
       transitionName="t-page-move"
-      transitionAppear={true}
-      transitionAppearTimeout={300}
-      transitionEnterTimeout={300}
+      transitionEnterTimeout={500}
       transitionLeaveTimeout={500}
     >
       <Switch

@@ -9,11 +9,11 @@
 @import 'base/typography';
 @import 'base/scaffolding';
 
-@import 'transitions/page-move';
-
 @import 'objects/wrapper';
 @import 'objects/page';
 
 @import 'components/title';
 @import 'components/new-member-count';
 @import 'components/scouting-results';
+
+@import 'transitions/page-move';

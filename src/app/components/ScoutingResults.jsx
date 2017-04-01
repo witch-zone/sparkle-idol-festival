@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom'
 import Idols from './idols'
 
 const ScoutingResults = () => (
-  <div className="o-page">
-    <h1 className="c-title">
-      Scout
-    </h1>
+  <div className="o-page t-page-move--natsuiro-egao-de-1-2-jump">
+    <header>
+      <h1 className="c-title">
+        Scout
+      </h1>
 
-    <h2 className="c-new-member-count">
-      Scouted <strong>11</strong> new members!
-    </h2>
+      <h2 className="c-new-member-count">
+        Scouted <strong>11</strong> new members!
+      </h2>
+    </header>
 
     <section className="c-scouting-results">
       <Link to="/idols/saffron" className="c-scouting-results__idol">

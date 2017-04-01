@@ -1,9 +1,14 @@
-.t-page-move-appear {
+.t-page-move-enter {
   opacity: 0.01;
 
   &-active {
     opacity: 1;
-    transition: opacity .5s ease-in;
+    transition: opacity 0.5s ease-in;
+  }
+
+  &.t-page-move--natsuiro-egao-de-1-2-jump {
+    transition-delay: 0.5s;
+    transition-duration: 0s;
   }
 }
 
@@ -12,9 +17,16 @@
   position: absolute;
   left: 0;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 
   &-active {
     opacity: 0.01;
-    transition: opacity .5s ease-in;
+    transition: opacity 0.5s ease-in;
+  }
+
+  &.t-page-move--natsuiro-egao-de-1-2-jump {
+    transition-delay: 0s;
+    transition-duration: 0s;
   }
 }
