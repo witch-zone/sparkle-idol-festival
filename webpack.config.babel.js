@@ -19,6 +19,7 @@ config.default = {
 
   output: {
     path: './dist/',
+    publicPath: '/',
     filename: '[name].[hash].js',
   },
 
@@ -77,11 +78,6 @@ config.default = {
 config.production = {
   ...config.default,
 
-  output: {
-    ...config.default.output,
-    publicPath: 'http://sif.witch.zone',
-  },
-
   plugins: [
     ...config.default.plugins,
     new webpack.optimize.UglifyJsPlugin({
@@ -94,11 +90,6 @@ config.production = {
 
 config.development = {
   ...config.default,
-
-  output: {
-    ...config.default.output,
-    publicPath: '/',
-  },
 
   devtool: 'source-map',
 
