@@ -1,4 +1,13 @@
-.💭 {
-  opacity: 0.5;
-  transform: scale(0.9);
+#✨ {
+  &.‼️ {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+#💭 {
+  &.‼️ {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
 }

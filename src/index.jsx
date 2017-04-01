@@ -11,5 +11,12 @@ render(
   <BrowserRouter>
     <SparkleIdolFestival />
   </BrowserRouter>,
-  document.getElementById('✨')
+  document.getElementById('✨'),
+  () => setTimeout(
+    () => {
+      console.log("wowy")
+      document.getElementById("💭").classList.add("‼️")
+      document.getElementById('✨').classList.add("‼️")
+    }, 500
+  )
 )
