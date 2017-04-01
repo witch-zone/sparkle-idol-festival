@@ -1,7 +1,37 @@
 body {
-  font-family: "LLSIF Text";
+
 }
 
-h1 {
-  font-family: "LLSIF Title";
+.border {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 1.66em solid $colour-border-dark;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+  }
+
+  &:before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0.2em solid $colour-border-light;
+  }
+
+  &:after {
+    top: -.6em;
+    bottom: -.6em;
+    left: -.6em;
+    right: -.6em;
+    border: 0.2em solid $colour-border-light-off;
+  }
 }

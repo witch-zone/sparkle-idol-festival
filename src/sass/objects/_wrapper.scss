@@ -1,6 +1,9 @@
 .o-wrapper {
+  position: relative;
   min-height: 100%;
   width: 100%;
+  box-sizing: border-box;
+  padding: 2em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

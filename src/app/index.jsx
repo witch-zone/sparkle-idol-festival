@@ -7,6 +7,8 @@ import ScoutingResults from './components/ScoutingResults'
 
 const SparkleIdolFestival = () => (
   <main className="o-wrapper">
+    <div className="border"></div>
+
     <Route render={({ location }) => (
       <Transition
         transitionName="t-page-move"
