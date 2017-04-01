@@ -1,0 +1,22 @@
+.c-idol-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.c-idol-details__card {
+  background: url("../assets/images/cards/back.jpg");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  width: 40%;
+  flex-grow: 0;
+  text-align: right;
+}
+
+.c-idol-details__sidebar {
+  flex-grow: 1;
+  margin: 0 0 0 $base-spacing*2;
+}

@@ -34,7 +34,7 @@ render(
       () => {
         document.getElementById("💭").classList.add("‼️")
         document.getElementById('✨').classList.add("‼️")
-      }, 250
+      }, 500
     )
 
     Promise.all([
