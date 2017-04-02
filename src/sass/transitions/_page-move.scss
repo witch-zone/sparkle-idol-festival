@@ -1,4 +1,5 @@
-.t-page-move-enter {
+.t-page-move-enter,
+.t-idol-move-enter {
   opacity: 0.01;
   transform: translateZ(0);
 
@@ -50,4 +51,8 @@
   &.t-page-move--natsuiro-egao-de-1-2-jump {
     display: none;
   }
+}
+
+.t-idol-move-leave {
+  display: none;
 }
