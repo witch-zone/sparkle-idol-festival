@@ -5,9 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import SparkleIdolFestival from './app'
 
 import preloader from './preloader'
-
-require('./sass/preload.scss')
-require('./sass/sif.scss')
+import './resources'
 
 render(
   <BrowserRouter onUpdate={() => console.log("hello")}>
