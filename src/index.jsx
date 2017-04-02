@@ -6,7 +6,7 @@ import Promyfill from 'promise-polyfill'
 import SparkleIdolFestival from './app'
 
 import otonokizaka from 'assets/images/otonokizaka.jpg'
-import logo from 'assets/images/ribbon-logo.png'
+import logo from 'assets/images/logo.png'
 
 require('./sass/preload.scss')
 require('./sass/sif.scss')
@@ -34,7 +34,7 @@ render(
       () => {
         document.getElementById("💭").classList.add("‼️")
         document.getElementById('✨').classList.add("‼️")
-      }, 500
+      }, 666
     )
 
     Promise.all([
