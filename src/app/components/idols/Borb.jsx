@@ -11,7 +11,7 @@ const Borb = () => (
     skill="Everybody's Favourite!"
     attribute="all"
     card={card}
-    fullCard="assets/cards/borb.png"
+    fullCard="/cards/borb.jpg"
   >
     <p>
       Borb is the small, shapely friend who everyone fell in love with when Dani cosplayed <a href="http://schoolido.lu/cards/746/SR-Kousaka-Honoka-Vampire-event-Cool/" target="_blank">Vampire Honoka</a> in 2016!

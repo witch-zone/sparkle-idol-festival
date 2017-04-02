@@ -18,9 +18,9 @@ const Yen = () => (
     skill="A Real Troublemaker♡"
     attribute="smile"
     card={card}
-    fullCard="assets/cards/yen.png"
+    fullCard="/cards/yen.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/dani-yen.jpg"
+    pairLink="/cards/pairs/dani-yen.jpg"
     pairPosition="right"
   >
     <p>

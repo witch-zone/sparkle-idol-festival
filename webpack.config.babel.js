@@ -9,8 +9,8 @@ const env = process.env.NODE_ENV
 
 const config = {}
 
-const preloadCSS = new ExtractTextPlugin('preload.css')
-const mainCSS = new ExtractTextPlugin('sif.[hash].css')
+const preloadCSS = new ExtractTextPlugin('bundle/preload.css')
+const mainCSS = new ExtractTextPlugin('bundle/sif.[hash].css')
 
 config.default = {
   entry: {
@@ -20,7 +20,7 @@ config.default = {
   output: {
     path: './dist/',
     publicPath: '/',
-    filename: '[name].[hash].js',
+    filename: 'bundle/[name].[hash].js',
   },
 
   module: {
@@ -71,7 +71,7 @@ config.default = {
     new HtmlWebpackPlugin({ template: './src/index.html' }),
     preloadCSS,
     mainCSS,
-    new StyleExtHtmlWebpackPlugin('preload.css'),
+    new StyleExtHtmlWebpackPlugin('bundle/preload.css'),
   ],
 }
 

@@ -18,9 +18,9 @@ const Robin = () => (
     skill="Muscle Princess"
     attribute="cool"
     card={card}
-    fullCard="assets/cards/robin.png"
+    fullCard="/cards/robin.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/robin-sami.png"
+    pairLink="/cards/pairs/robin-sami.jpg"
     pairPosition="right"
   >
     <p>

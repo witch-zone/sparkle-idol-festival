@@ -18,9 +18,9 @@ const Katie = () => (
     skill="Power Of The Moon"
     attribute="smile"
     card={card}
-    fullCard="assets/cards/katie.png"
+    fullCard="/cards/katie.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/katie-saffron.png"
+    pairLink="/cards/pairs/katie-saffron.jpg"
     pairPosition="right"
   >
     <p>

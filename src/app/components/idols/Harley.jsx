@@ -18,9 +18,9 @@ const Harley = () => (
     skill="Busy As A Bee!"
     attribute="cool"
     card={card}
-    fullCard="assets/cards/harley.png"
+    fullCard="/cards/harley.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/harley-michaela.png"
+    pairLink="/cards/pairs/harley-michaela.jpg"
     pairPosition="left"
   >
     <p>

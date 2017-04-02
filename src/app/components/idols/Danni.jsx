@@ -18,9 +18,9 @@ const Danni = () => (
     skill="Actually A Princess"
     attribute="pure"
     card={card}
-    fullCard="assets/cards/danni.png"
+    fullCard="/cards/danni.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/danni-gemma.png"
+    pairLink="/cards/pairs/danni-gemma.jpg"
     pairPosition="left"
   >
     <p>

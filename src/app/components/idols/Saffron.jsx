@@ -18,9 +18,9 @@ const Saffron = () => (
     skill="Join The Shiba Society!"
     attribute="smile"
     card={card}
-    fullCard="assets/cards/saffron.png"
+    fullCard="/cards/saffron.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/katie-saffron.png"
+    pairLink="/cards/pairs/katie-saffron.jpg"
     pairPosition="left"
   >
     <p>

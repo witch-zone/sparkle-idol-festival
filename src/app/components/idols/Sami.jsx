@@ -18,16 +18,16 @@ const Sami = () => (
     skill="I Love Dogys So Much"
     attribute="pure"
     card={card}
-    fullCard="assets/cards/sami.png"
+    fullCard="/cards/sami.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/robin-sami.png"
+    pairLink="/cards/pairs/robin-sami.jpg"
     pairPosition="left"
   >
     <p>
       The members originally came together when Sami invited some of them to Danni’s birthday party last year—previously, they’d never even met, but by the end of the night the witch♥zone was formed! On top of that, they created a pretty convincing Shrek coffee shop AU, but sadly there’s been no progress on that since.
     </p>
     <p>
-      By far the <a href="https://www.youtube.com/watch?v=Q-AHUFHHNXw" target="_blank">most refined and formal</a> member of the group, Sami will be cosplaying Dia Kurosawa later this year. We’re all smartening up and practicing our manners in preparation—and please, don’t swear in front of her when she’s cosplaying Hanayo! 🐶🍚
+      By far the <a href="https://www.youtube.com/watch?v=Q-AHUFHHNXw" target="_blank">most refined and formal</a> member of the group, Sami will be cosplaying Dia Kurosawa later this year. We’re all smartening up and practicing our manners in preparation—and please, don’t swear in front of her when she’s cosplaying Hanayo! 🍚
     </p>
   </IdolDetails>
 )

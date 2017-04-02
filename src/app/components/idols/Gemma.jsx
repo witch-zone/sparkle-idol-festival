@@ -18,9 +18,9 @@ const Gemma = () => (
     skill="Doing My Rubesty"
     attribute="cool"
     card={card}
-    fullCard="assets/cards/gemma.png"
+    fullCard="/cards/gemma.jpg"
     pairDetails={<PairDetails />}
-    pairLink="assets/cards/pairs/danni-gemma.png"
+    pairLink="/cards/pairs/danni-gemma.jpg"
     pairPosition="right"
   >
     <p>
