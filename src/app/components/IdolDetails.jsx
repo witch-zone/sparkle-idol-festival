@@ -23,8 +23,12 @@ const IdolDetails = ({
 
     <article className="c-idol-details">
       <div className="c-idol-details__card t-page-move-left">
-        <a href={fullCard} target="_blank">
-          <img src={card || placeholderCard} />
+        <a className="c-idol-details__card-wrapper" href={fullCard} target="_blank">
+          <img src={placeholderCard} />
+          
+          { card &&
+            <img className="card" src={card} />
+          }
         </a>
       </div>
 

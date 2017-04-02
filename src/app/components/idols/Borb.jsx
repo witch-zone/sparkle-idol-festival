@@ -8,7 +8,7 @@ import card from '../../../assets/images/cards/borb.jpg'
 const Borb = () => (
   <IdolDetails
     name="Bat Orb"
-    skill="Everybody loves them!"
+    skill="Everybody's Favourite!"
     attribute="all"
     card={card}
     fullCard="assets/cards/borb.png"
