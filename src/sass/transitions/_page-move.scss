@@ -1,9 +1,23 @@
 .t-page-move-enter {
   opacity: 0.01;
 
+  .t-page-move-left {
+    transform: translateX(-40vw);
+  }
+
+  .t-page-move-right {
+    transform: translateX(40vw);
+  }
+
   &-active {
     opacity: 1;
-    transition: opacity 0.5s ease-in;
+    transition: opacity 0.5s ease-out;
+
+    .t-page-move-left,
+    .t-page-move-right {
+      transform: none;
+      transition: transform 0.5s ease-out;
+    }
   }
 }
 
@@ -13,6 +27,19 @@
   &-active {
     opacity: 0.01;
     transition: opacity 0.5s ease-in;
+
+    .t-page-move-left,
+    .t-page-move-right {
+      transition: transform 0.5s ease-out;
+    }
+
+    .t-page-move-left {
+      transform: translateX(-40vw);
+    }
+
+    .t-page-move-right {
+      transform: translateX(40vw);
+    }
   }
 }
 

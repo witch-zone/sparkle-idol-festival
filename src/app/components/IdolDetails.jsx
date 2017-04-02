@@ -22,13 +22,13 @@ const IdolDetails = ({
     </header>
 
     <article className="c-idol-details">
-      <div className="c-idol-details__card">
+      <div className="c-idol-details__card t-page-move-left">
         <a href={fullCard} target="_blank">
           <img src={card || placeholderCard} />
         </a>
       </div>
 
-      <div className="c-idol-details__sidebar">
+      <div className="c-idol-details__sidebar t-page-move-right">
         <header className="c-idol-details__badge">
           <Badge
             name={name}
@@ -60,13 +60,5 @@ const IdolDetails = ({
     </article>
   </div>
 )
-
-IdolDetails.propTypes = {
-  card: PropTypes.shape({
-    width: PropTypes.number.isRequired,
-    height: PropTypes.number.isRequired,
-    src: PropTypes.string.isRequired,
-  }).isRequired,
-}
 
 export default IdolDetails
