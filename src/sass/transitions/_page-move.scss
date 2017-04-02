@@ -1,12 +1,13 @@
 .t-page-move-enter {
   opacity: 0.01;
+  transform: translateZ(0);
 
   .t-page-move-left {
-    transform: translateX(-40vw);
+    transform: translateX(-40vw) translateZ(0);
   }
 
   .t-page-move-right {
-    transform: translateX(40vw);
+    transform: translateX(40vw) translateZ(0);
   }
 
   &-active {
@@ -15,7 +16,7 @@
 
     .t-page-move-left,
     .t-page-move-right {
-      transform: none;
+      transform: translateZ(0);
       transition: transform 0.5s ease-out;
     }
   }
@@ -27,6 +28,7 @@
   &-active {
     opacity: 0.01;
     transition: opacity 0.5s ease-in;
+    transform: translateZ(0);
 
     .t-page-move-left,
     .t-page-move-right {
@@ -34,11 +36,11 @@
     }
 
     .t-page-move-left {
-      transform: translateX(-40vw);
+      transform: translateX(-40vw) translateZ(0);
     }
 
     .t-page-move-right {
-      transform: translateX(40vw);
+      transform: translateX(40vw) translateZ(0);
     }
   }
 }

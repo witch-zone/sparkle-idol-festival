@@ -13,6 +13,9 @@ const IdolDetails = ({
   card,
   fullCard,
   ring,
+  children,
+  pairDetails,
+  pairLink,
 }) => (
   <div className="o-page">
     <header className="o-header">
@@ -25,7 +28,7 @@ const IdolDetails = ({
       <div className="c-idol-details__card t-page-move-left">
         <a className="c-idol-details__card-wrapper" href={fullCard} target="_blank">
           <img src={placeholderCard} />
-          
+
           { card &&
             <img className="card" src={card} />
           }
@@ -43,9 +46,14 @@ const IdolDetails = ({
 
         <div className="c-idol-details__details-wrapper">
           <section className="c-idol-details__stats">
-            <div>based on honoka</div>
-            <div>ring icon</div>
+            {children}
           </section>
+
+          { pairLink &&
+            <section className="c-idol-details__stats c-idol-details__pair">
+              {pairDetails}
+            </section>
+          }
         </div>
 
         <footer className="c-idol-details__actions">

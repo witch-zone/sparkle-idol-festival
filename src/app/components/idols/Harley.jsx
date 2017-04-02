@@ -12,7 +12,8 @@ const Harley = () => (
     attribute="cool"
     card={card}
     fullCard="assets/cards/harley.png"
-  />
+  >
+  </IdolDetails>
 )
 
 Harley.Ring = () => (

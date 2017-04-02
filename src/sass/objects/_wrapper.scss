@@ -3,16 +3,14 @@
   min-height: 100%;
   width: 100%;
   box-sizing: border-box;
-  padding: 3em;
+  padding: 5em 3em;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: stretch;
 
-  background: url("../assets/images/otonokizaka.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-attachment: fixed;
+  @media #{$mq-tablet} {
+    padding: 3em;
+  }
 }

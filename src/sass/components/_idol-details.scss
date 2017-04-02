@@ -1,18 +1,36 @@
 .c-idol-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-items: stretch;
   justify-content: center;
+
+  @media #{$mq-tablet} {
+    flex-direction: row;
+    align-items: stretch;
+  }
 }
 
 .c-idol-details__card {
-  width: 40%;
   flex-grow: 0;
-  text-align: right;
+  flex-shrink: 0;
+  text-align: center;
+  margin-bottom: $base-spacing;
 
   img {
     vertical-align: bottom;
+    max-width: 15em;
+  }
+
+  @media #{$mq-tablet} {
+    width: 40%;
+    flex-direction: row;
+    margin-bottom: 0;
+    text-align: right;
+
+    img {
+      max-width: 100%;
+    }
   }
 }
 
@@ -23,17 +41,22 @@
   .card {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .c-idol-details__sidebar {
   flex-grow: 1;
-  margin: 0 0 0 $base-spacing*2;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+
+  @media #{$mq-tablet} {
+    margin-left: $base-spacing*2
+  }
 }
 
 .c-idol-details__details-wrapper {

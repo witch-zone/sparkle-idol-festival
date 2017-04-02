@@ -12,7 +12,8 @@ const Danni = () => (
     attribute="pure"
     card={card}
     fullCard="assets/cards/danni.png"
-  />
+  >
+  </IdolDetails>
 )
 
 Danni.Ring = () => (

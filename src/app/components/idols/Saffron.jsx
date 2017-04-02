@@ -12,7 +12,8 @@ const Saffron = () => (
     attribute="smile"
     card={card}
     fullCard="assets/cards/saffron.png"
-  />
+  >
+  </IdolDetails>
 )
 
 Saffron.Ring = () => (

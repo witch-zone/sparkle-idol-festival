@@ -12,7 +12,8 @@ const Sami = () => (
     attribute="pure"
     card={card}
     fullCard="assets/cards/sami.png"
-  />
+  >
+  </IdolDetails>
 )
 
 Sami.Ring = () => (

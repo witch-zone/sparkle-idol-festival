@@ -12,7 +12,8 @@ const Gemma = () => (
     attribute="cool"
     card={card}
     fullCard="assets/cards/gemma.png"
-  />
+  >
+  </IdolDetails>
 )
 
 Gemma.Ring = () => (
