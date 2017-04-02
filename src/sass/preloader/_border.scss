@@ -8,6 +8,7 @@
   pointer-events: none;
   box-sizing: border-box;
   border: 1.66em solid $colour-border-dark;
+  border-bottom-width: 1.66em * 2;
 
   img {
     position: absolute;
