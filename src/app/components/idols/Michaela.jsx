@@ -10,7 +10,7 @@ const Michaela = () => (
     name="Michaela Ward"
     attribute="pure"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/michaela.png"
   />
 )
 

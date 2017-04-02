@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import { Link } from 'react-router-dom'
 
 import Button, { SecondaryButton } from './Button'
@@ -11,6 +11,7 @@ const IdolDetails = ({
   skill,
   attribute,
   card,
+  fullCard,
   ring,
 }) => (
   <div className="o-page">
@@ -22,7 +23,9 @@ const IdolDetails = ({
 
     <article className="c-idol-details">
       <div className="c-idol-details__card">
-        <img src={card || placeholderCard} />
+        <a href={fullCard} target="_blank">
+          <img src={card || placeholderCard} />
+        </a>
       </div>
 
       <div className="c-idol-details__sidebar">
@@ -43,7 +46,7 @@ const IdolDetails = ({
 
         <footer className="c-idol-details__actions">
           <SecondaryButton>
-            <a href={card} target="_blank">
+            <a href={fullCard} target="_blank">
               Zoom
             </a>
           </SecondaryButton>
@@ -57,5 +60,13 @@ const IdolDetails = ({
     </article>
   </div>
 )
+
+IdolDetails.propTypes = {
+  card: PropTypes.shape({
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
+    src: PropTypes.string.isRequired,
+  }).isRequired,
+}
 
 export default IdolDetails

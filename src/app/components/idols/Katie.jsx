@@ -11,7 +11,7 @@ const Katie = () => (
     skill="Power Of The Moon"
     attribute="smile"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/katie.png"
   />
 )
 

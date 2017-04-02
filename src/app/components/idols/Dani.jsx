@@ -11,7 +11,7 @@ const Dani = () => (
     skill="Spooky Sweet Royalty"
     attribute="pure"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/dani.png"
   />
 )
 

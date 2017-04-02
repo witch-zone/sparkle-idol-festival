@@ -11,7 +11,7 @@ const Sami = () => (
     skill=""
     attribute="pure"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/sami.png"
   />
 )
 

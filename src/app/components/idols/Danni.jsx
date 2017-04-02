@@ -11,7 +11,7 @@ const Danni = () => (
     skill="Actually A Princess"
     attribute="pure"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/danni.png"
   />
 )
 

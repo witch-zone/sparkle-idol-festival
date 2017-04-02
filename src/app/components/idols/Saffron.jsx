@@ -11,7 +11,7 @@ const Saffron = () => (
     skill=""
     attribute="smile"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/saffron.png"
   />
 )
 

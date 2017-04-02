@@ -60,6 +60,10 @@ const ScoutingResults = () => (
         <Idols.Robin.Ring />
       </Link>
     </section>
+
+    <section className="c-scouting-intro">
+      For Valentine's day 2017, we thought we'd surprise our dear Love Live!-loving friends by making them into real idols! Click on a member to learn more about them.
+    </section>
   </div>
 )
 

@@ -11,7 +11,7 @@ const Gemma = () => (
     skill="Doing My Rubesty"
     attribute="cool"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/gemma.png"
   />
 )
 

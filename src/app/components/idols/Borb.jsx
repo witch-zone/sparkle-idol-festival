@@ -11,7 +11,7 @@ const Borb = () => (
     skill="Everybody loves them!"
     attribute="all"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/borb.png"
   />
 )
 

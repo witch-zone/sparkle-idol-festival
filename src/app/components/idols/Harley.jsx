@@ -11,7 +11,7 @@ const Harley = () => (
     skill="Busy As A Bee"
     attribute="cool"
     card={card}
-    ring={ring}
+    fullCard="assets/cards/harley.png"
   />
 )
 
