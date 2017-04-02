@@ -20,7 +20,8 @@ const Yen = () => (
     card={card}
     fullCard="assets/cards/yen.png"
     pairDetails={<PairDetails />}
-    pairLink="google"
+    pairLink="assets/cards/pairs/dani-yen.jpg"
+    pairPosition="right"
   >
   </IdolDetails>
 )

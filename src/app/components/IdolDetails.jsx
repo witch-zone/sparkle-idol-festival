@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import Button, { SecondaryButton } from './Button'
 import Badge from './Badge'
+import PairBadge from './PairBadge'
 
 import placeholderCard from 'preload-image!../../assets/images/cards/back.jpg'
 
@@ -16,6 +17,7 @@ const IdolDetails = ({
   children,
   pairDetails,
   pairLink,
+  pairPosition,
 }) => (
   <div className="o-page">
     <header className="o-header">
@@ -24,7 +26,9 @@ const IdolDetails = ({
       </h1>
     </header>
 
-    <article className="c-idol-details">
+    <article
+      className={`c-idol-details c-idol-details--${attribute}`}
+    >
       <div className="c-idol-details__card t-page-move-left">
         <a className="c-idol-details__card-wrapper" href={fullCard} target="_blank">
           <img src={placeholderCard} />
@@ -50,8 +54,12 @@ const IdolDetails = ({
           </section>
 
           { pairLink &&
-            <section className="c-idol-details__stats c-idol-details__pair">
-              {pairDetails}
+            <section className="c-idol-details__pair">
+              <PairBadge
+                details={pairDetails}
+                link={pairLink}
+                position={pairPosition}
+              />
             </section>
           }
         </div>

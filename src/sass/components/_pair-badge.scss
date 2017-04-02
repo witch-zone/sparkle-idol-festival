@@ -1,0 +1,36 @@
+.c-pair-badge {
+  background: $colour-white;
+  color: $colour-black;
+  padding: 1em;
+  box-shadow: inset 0 0 0 $base-border-size rgba(204, 204, 204, 0.42);
+  border: $base-border-size solid $colour-white;
+  border-radius: 1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.c-pair-badge__icon {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 3em;
+  margin: 0 $base-spacing 0 0;
+
+  img {
+    vertical-align: bottom;
+  }
+}
+
+.c-pair-badge__details {
+  flex-grow: 1;
+}
+
+.c-pair-badge__title {
+  font-family: "LLSIF Rounded";
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin-bottom: 0.25em;
+}

@@ -1,9 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import IdolDetails from '../IdolDetails'
 
 import ring from 'preload-image!../../../assets/images/rings/sami.png'
 import card from '../../../assets/images/cards/sami.jpg'
+
+const PairDetails = () => (
+  <span>
+    Sami is taking in the sun with <Link to="/idols/robin">Robin</Link>!
+  </span>
+)
 
 const Sami = () => (
   <IdolDetails
@@ -12,6 +19,9 @@ const Sami = () => (
     attribute="pure"
     card={card}
     fullCard="assets/cards/sami.png"
+    pairDetails={<PairDetails />}
+    pairLink="assets/cards/pairs/robin-sami.png"
+    pairPosition="left"
   >
   </IdolDetails>
 )
