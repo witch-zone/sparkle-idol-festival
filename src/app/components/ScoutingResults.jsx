@@ -7,7 +7,7 @@ const ScoutingResults = () => (
   <div className="o-page t-page-move--natsuiro-egao-de-1-2-jump">
     <header className="o-header">
       <h1 className="c-title">
-        Scout
+        Valentine's Scout 2017
       </h1>
 
       <h2 className="c-new-member-count">

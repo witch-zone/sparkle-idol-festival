@@ -5,28 +5,20 @@
     opacity: 1;
     transition: opacity 0.5s ease-in;
   }
-
-  &.t-page-move--natsuiro-egao-de-1-2-jump {
-    transition-delay: 0.5s;
-    transition-duration: 0s;
-  }
 }
 
 .t-page-move-leave {
   opacity: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 
   &-active {
     opacity: 0.01;
     transition: opacity 0.5s ease-in;
   }
+}
 
+.t-page-move-enter,
+.t-page-move-leave {
   &.t-page-move--natsuiro-egao-de-1-2-jump {
-    transition-delay: 0s;
-    transition-duration: 0s;
+    display: none;
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Button, { SecondaryButton } from './Button'
 import Badge from './Badge'
 
 import placeholderCard from 'preload-image!../../assets/images/cards/back.jpg'
@@ -15,7 +16,7 @@ const IdolDetails = ({
   <div className="o-page">
     <header className="o-header">
       <h1 className="c-title">
-        Scout
+        Valentine's Scout 2017
       </h1>
     </header>
 
@@ -25,7 +26,7 @@ const IdolDetails = ({
       </div>
 
       <div className="c-idol-details__sidebar">
-        <header>
+        <header className="c-idol-details__badge">
           <Badge
             name={name}
             skill={skill}
@@ -33,15 +34,24 @@ const IdolDetails = ({
           />
         </header>
 
-        <section>
-          <div>based on honoka</div>
-          <div>ring icon</div>
-        </section>
+        <div className="c-idol-details__details-wrapper">
+          <section className="c-idol-details__stats">
+            <div>based on honoka</div>
+            <div>ring icon</div>
+          </section>
+        </div>
 
-        <footer>
-          <Link className="c-sif-button" to="/">
-            back
-          </Link>
+        <footer className="c-idol-details__actions">
+          <SecondaryButton>
+            <a href={card} target="_blank">
+              Zoom
+            </a>
+          </SecondaryButton>
+          <Button>
+            <Link to="/">
+              OK!
+            </Link>
+          </Button>
         </footer>
       </div>
     </article>

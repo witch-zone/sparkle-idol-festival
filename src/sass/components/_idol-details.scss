@@ -19,4 +19,35 @@
 .c-idol-details__sidebar {
   flex-grow: 1;
   margin: 0 0 0 $base-spacing*2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.c-idol-details__details-wrapper {
+  flex-grow: 1;
+}
+
+.c-idol-details__badge {
+  margin: 0 0 $base-spacing;
+}
+
+.c-idol-details__stats {
+  margin: 0 0 $base-spacing;
+  background: $colour-white;
+  color: $colour-black;
+  padding: 1em;
+  box-shadow: inset 0 0 0 $base-border-size rgba(204, 204, 204, 0.42);
+  border: $base-border-size solid $colour-white;
+  border-radius: 1em;
+}
+
+.c-idol-details__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  text-align: right;
 }
