@@ -44,10 +44,34 @@
   }
 }
 
-.c-sif-button--secondary {
+.c-sif-button--smile {
+  .c-sif-button__border--off,
+  .c-sif-button__link {
+    background: $colour-sif-smile;
+    color: $colour-sif-smile;
+  }
+}
+
+.c-sif-button--pure {
   .c-sif-button__border--off,
   .c-sif-button__link {
     background: $colour-sif-pure;
     color: $colour-sif-pure;
+  }
+}
+
+.c-sif-button--cool {
+  .c-sif-button__border--off,
+  .c-sif-button__link {
+    background: $colour-sif-cool;
+    color: $colour-sif-cool;
+  }
+}
+
+.c-sif-button--all {
+  .c-sif-button__border--off,
+  .c-sif-button__link {
+    background: $colour-sif-all;
+    color: $colour-sif-all;
   }
 }

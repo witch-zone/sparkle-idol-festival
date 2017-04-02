@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import { Link } from 'react-router-dom'
 
-import Button, { SecondaryButton } from './Button'
+import Button from './Button'
 import Badge from './Badge'
 import PairBadge from './PairBadge'
 
@@ -65,11 +65,11 @@ const IdolDetails = ({
         </div>
 
         <footer className="c-idol-details__actions">
-          <SecondaryButton>
+          <Button attribute={attribute}>
             <a href={fullCard} target="_blank">
               Zoom
             </a>
-          </SecondaryButton>
+          </Button>
           <Button>
             <Link to="/">
               OK!

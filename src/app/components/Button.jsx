@@ -1,7 +1,9 @@
 import React from 'react'
 
-const Button = ({ children, className }) => (
-  <span className={`c-sif-button ${className}`}>
+const Button = ({ children, attribute, className }) => (
+  <span
+    className={`c-sif-button c-sif-button--${attribute} ${className}`}
+  >
     <span className="c-sif-button__border">
       <span className="c-sif-button__border c-sif-button__border--off">
         <span className="c-sif-button__border">
@@ -15,23 +17,8 @@ const Button = ({ children, className }) => (
 )
 
 Button.defaultProps = {
+  attribute: '',
   className: '',
-}
-
-const SecondaryButton = ({ children, className }) => (
-  <Button
-    className={`${className} c-sif-button--secondary`}
-  >
-    { children }
-  </Button>
-)
-
-SecondaryButton.defaultProps = {
-  className: '',
-}
-
-export {
-  SecondaryButton,
 }
 
 export default Button

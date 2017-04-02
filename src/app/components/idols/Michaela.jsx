@@ -8,7 +8,7 @@ import card from '../../../assets/images/cards/michaela.jpg'
 
 const PairDetails = () => (
   <span>
-    Michaela is being lead astray by <Link to="/idols/harley">Harley</Link>!
+    Michaela is being led astray by <Link to="/idols/harley">Harley</Link>!
   </span>
 )
 
