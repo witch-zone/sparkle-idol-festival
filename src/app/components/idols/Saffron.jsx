@@ -23,6 +23,12 @@ const Saffron = () => (
     pairLink="assets/cards/pairs/katie-saffron.png"
     pairPosition="left"
   >
+    <p>
+      An avid cosplayer, photographer, and collector of figures, Saffron’s enthusiasm shapes the world around her. One time at a con, a plush she really wanted threw itself off a shelf, practically into her arms. We’re not really sure how it happened—she was just <em>stand</em>ing there&hellip;
+    </p>
+    <p>
+      Saffron will be cosplaying Riko later this year, and we’re all hoping that she’s going to compose a moving piano sonata about good shiba inus are. Of course, the Sparkle Idol Festival doesn’t take sides—all dogs are good dogs.
+    </p>
   </IdolDetails>
 )
 

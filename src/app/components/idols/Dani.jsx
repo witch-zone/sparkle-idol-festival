@@ -23,7 +23,12 @@ const Dani = () => (
     pairLink="assets/cards/pairs/dani-yen.png"
     pairPosition="left"
   >
-
+    <p>
+      Co-head witch of the witch♥zone, and designer of the Sparkle Idol Festival, Dani will be cosplaying Chika Takami later this year. Like Chika, she's kinda low-level cosplaying Honoka at all times. Yen sent her bread in the post once, just to prove the point.
+    </p>
+    <p>
+      Originally, the scout was going to happen when all the members were together cosplaying Aquors. We got too excited and couldn't wait that long, though, so it moved to Valentine's day! Surprise! 💖
+    </p>
   </IdolDetails>
 )
 
